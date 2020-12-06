@@ -45,6 +45,8 @@ public class SpelInteractiveApplication {
 //		return String.format("Hello %s!", expression);
 		Parser parser = new Parser();
 		Expression result = parser.parse(expression);
+		String value = result.getValue().toString();
+		System.out.println(value);
 		return result.getValue().toString();
 	}
 }
